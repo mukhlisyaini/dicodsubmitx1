@@ -8,10 +8,73 @@ body {
     padding: 0;
 }
 
+.hero {
+    background-image: url(../assets/workers-pixabay.jpg);
+    /*sumber gambar dari pixabay.com*/
+    height: 400px;
+    background-size: cover;
+    /*background-position: 0 -50px;*/
+    background-repeat: no-repeat;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-size: unset;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin: 5px;
+}
+
+nav a:hover {
+    font-weight: bold;
+    background-color: steelblue;
+}
+
+
+nav li {
+    display: inline;
+    list-style-type: none;
+}
+
+main {
+    padding: 10px;
+    overflow: auto;
+}
+
+#konten {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+aside img {
+    width: 200px;
+}
+
 footer {
     padding: 1px;
     color: white;
-    
+
     text-align: center;
     font-weight: bold;
 
@@ -19,5 +82,22 @@ footer {
     background-image: url(../assets/prism-toptal.png);
     /*prism-toptal - sumber dari toptal.com*/
     background-repeat: repeat-x;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
+/*Pengaturan untuk perapihan box model*/
+* {
+    box-sizing: border-box;
+}
+
+/*untuk scale pada media device berbeda seperti HP*/
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
