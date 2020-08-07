@@ -59,6 +59,23 @@ nav ul li a:hover {
     /* background-repeat: no-repeat; */
 }
 
+main {
+    padding: 10px;
+    overflow: auto;
+}
+
+.card {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    height: 30px;
+    background-image: url(../assets/prism-toptal.png);
+    text-align: center;
+}
 
 /* Pengaturan responsif */
 /* ukuran tablet */
