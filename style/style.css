@@ -57,12 +57,78 @@ nav ul li a:hover {
     height: 400px;
     background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat; */
 }
 
 main {
     padding: 10px;
     overflow: auto;
+}
+
+main p {
+    margin-top: 5px;
+}
+
+.card {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.secserv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.secserv div {
+    flex-grow: 1;
+    border: solid 1px steelblue;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 4px;
+    text-align: center;
+}
+
+.secserv .secservisi:hover {
+    background-color: steelblue;
+}
+
+.subserv {
+    height: 100px;
+
+}
+
+.sec1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.sec1 div {
+    flex-grow: 1;
+    border: solid 1px steelblue;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 4px;
+    text-align: center;
+}
+
+.sec1 .sec1cl1:hover {
+    background-color: lightseagreen;
+}
+
+.logoclient {
+    height: 100px;
+
 }
 
 #konten {
@@ -76,15 +142,7 @@ aside {
     padding-left: 10px;
 }
 
-.card {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
 aside table {
-    /* border: 2px dotted slateblue; */
     margin-top: 10px;
 }
 
@@ -92,6 +150,10 @@ aside table {
     border-bottom: 2px solid slateblue;
     font-weight: bold;
     text-align: center;
+}
+
+.logo {
+    width: 90px;
 }
 
 .ikon {
@@ -168,7 +230,6 @@ footer p {
         justify-content: space-evenly;
         background-color: steelblue;
         opacity: 0.8;
-        /* z-index: 97; */
         transform: translatex(100%);
         transition: all 1s;
     }
@@ -192,6 +253,14 @@ footer p {
 
     nav span.animspan3 {
         transform: scale(0);
+    }
+
+    .secserv {
+        flex-direction: column;
+    }
+
+    .sec1 {
+        flex-direction: column;
     }
 
     #konten,
